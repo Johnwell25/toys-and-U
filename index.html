@@ -280,6 +280,81 @@ dialog[open]{animation:pop .25s var(--ease)}
   .mosaic{grid-template-rows:repeat(2,120px);gap:8px}
 }
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---- mobile polish ---- */
+.item .t{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.item .ed{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:640px){
+  :root{--pad:18px}
+  .nav .wrap{height:60px}
+  .nav .btn-wa{min-height:40px!important;padding:0 14px!important;font-size:14px!important}
+  .tools{top:60px}
+  html{scroll-padding-top:80px}
+  .hero{padding:22px 0 34px}
+  h1{font-size:clamp(38px,11vw,46px);margin:14px 0 14px;letter-spacing:-.035em}
+  .lead{font-size:16.5px;margin-bottom:22px}
+  .cta{flex-direction:column;gap:10px}
+  .cta .btn{width:100%;min-height:52px}
+  .facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px;padding-top:0;border-top:0}
+  .facts div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 14px}
+  .facts div b{font-size:24px}
+  .facts div span{font-size:13px}
+  .mosaic{grid-template-columns:1.25fr 1fr;grid-template-rows:150px 150px;gap:10px;aspect-ratio:auto;margin-top:4px}
+  .mosaic figure:first-child{grid-row:span 2}
+  .mosaic figure:nth-child(n+4){display:none}
+  .mosaic figure{border-radius:18px}
+  .sec{padding:40px 0}
+  #series.sec{padding-top:8px}
+  .sec-head{margin-bottom:16px}
+  h2{font-size:30px}
+  .series{grid-template-columns:1fr 1fr;gap:10px}
+  .s-card{min-height:0;aspect-ratio:1/1;border-radius:18px}
+  .s-card .lab{flex-direction:column;align-items:flex-start;gap:0;margin:8px;padding:7px 10px}
+  .s-card .lab b{font-size:14px;line-height:1.2}
+  .s-card .lab span{font-size:12px}
+  .tools{padding:10px 0 8px;box-shadow:0 8px 16px -14px rgba(29,35,64,.35)}
+  .tools .row{gap:8px}
+  .tools .row.r1 .search{flex:1 1 100%}
+  .tools .row.r1 label:has(select){flex:1}
+  .tools .row.r1 select{width:100%;min-height:44px;font-size:14px}
+  .search input{min-height:46px}
+  .tools .row:nth-child(3){flex-direction:column;align-items:stretch;gap:8px}
+  #kinds{width:100%;justify-content:space-between}
+  #kinds button{padding:0 10px;font-size:13px;min-height:38px;flex:1}
+  .chips{gap:6px}
+  .chip{min-height:38px;padding:0 12px;font-size:13px;flex:1;justify-content:center}
+  .meta-row{margin-top:6px;font-size:13px}
+  .group{margin-top:26px}
+  .group h3{font-size:20px;margin-bottom:12px;flex-wrap:wrap;gap:4px 8px}
+  .grid{gap:10px}
+  .item{border-radius:16px}
+  .item .bd{padding:10px 12px 12px;gap:2px}
+  .item .t{font-size:14.5px}
+  .item .ed{font-size:12.5px}
+  .item .ft{flex-direction:row;padding-top:8px}
+  .item .k{display:none}
+  .stock{font-size:12px;padding:4px 9px}
+  .badge{left:8px;top:8px;font-size:11px;padding:3px 8px}
+  .box{right:8px;top:8px;font-size:11px;padding:2px 7px}
+  .close-card{border-radius:22px;padding:26px 20px;gap:20px}
+  .close h2{font-size:32px}
+  .close-copy p{font-size:16px}
+  .close-panel{border-radius:18px;padding:20px}
+  .num{font-size:26px}
+  .close-panel .close-cta{width:100%;display:flex}
+  .close-panel .close-cta .btn{flex:1;width:100%}
+  .foot{padding:40px 0 30px}
+  .foot-top{gap:24px 16px}
+  .foot-bot{flex-direction:column;gap:6px}
+  .totop{width:44px;height:44px;right:14px;bottom:14px}
+  .dlg .info{padding:22px 20px 24px}
+  .dlg h3{font-size:22px}
+  dialog{max-width:94vw;border-radius:22px}
+}
+@media (max-width:360px){
+  #kinds button{padding:0 7px;font-size:12px}
+  .facts div b{font-size:21px}
+}
 </style>
 </head>
 <body>
