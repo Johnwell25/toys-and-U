@@ -1,0 +1,5 @@
+Upload the CONTENTS of each folder into the main (root) of the repo, one folder at a time:
+1. Open upload-1, select all files, drag them into GitHub's 'Upload files' page, commit.
+2. Repeat for upload-2, then upload-3.
+Do not upload the folders themselves - only the files inside.
+Then turn on GitHub Pages: Settings > Pages > Deploy from a branch > main > / (root) > Save.
